@@ -10,8 +10,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  const { url } = req.query;
   const response = await axios.get(
-    "http://webcache.googleusercontent.com/search?q=cache:https://wityan.medium.com/next-js-project-structure-1531610bed71"
+    `http://webcache.googleusercontent.com/search?q=cache:${url}`
   );
 
   const responseCode = response.status;
