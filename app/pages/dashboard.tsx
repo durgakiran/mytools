@@ -1,4 +1,4 @@
-import { Button, Grid, Input, Loading, Page } from "@geist-ui/core";
+import { Grid, Input, Loading, Page } from "@geist-ui/core";
 import { useEffect, useState } from "react";
 import getContentFromCache from "../core/utils/getContentFromCache";
 import validUrl from "../core/utils/validUrl";
